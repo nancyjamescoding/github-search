@@ -1,18 +1,16 @@
 <div class="container">
     <h2 class="text-center">Create a new Goal</h2>
-    <form>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Search by User Name</option>
-              <option>Search by Repository Name<option>
-            </select>
-          </div>
+    <form #userForm='ngForm'>
           <div class="form-group">
             <label for="name">Enter User Name</label>
-            <input type="text" required class="form-control" id="name" >
+            <input type="text" required class="form-control" id="userName"  [(ngModel)]="newUser.userName" name="userName">
             <br>
-            <button class="btn btn-info  btn-sm"> Search</button>
+            <button class="btn btn-info  btn-sm" (click) = "onSearch()"> Search</button>
         </div>
     </form>
+    <div>
+      <div *ngFor='let repo of repos;let i = index'>
+        <p>{{repo.name}}</p>
+      </div>
+    </div>
   </div>

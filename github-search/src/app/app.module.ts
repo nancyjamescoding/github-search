@@ -7,6 +7,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { GithubSearchComponent } from './github-search/github-search.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { SearchRepoFormComponent } from './search-repo-form/search-repo-form.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { NotFoundComponent } from './not-found/not-found.component';
     NavbarComponent,
     GithubSearchComponent,
     SearchFormComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SearchRepoFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
