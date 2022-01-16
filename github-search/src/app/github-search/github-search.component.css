@@ -10,50 +10,5 @@
     margin-left: auto;
     margin-right: auto;
 }
-.name {
-    text-align: center;
-    color:black;
-    font-size: large;
-}
-.career {
-    text-align: center;
-    color:black;
-}
-.github{
-    text-align: center;
-    color:blue;
-}
-.important{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color:lavenderblush;
-    margin: 20px;
-}
-.important .about {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-/* .unimportant {
-    background-color:whitesmoke;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 20px;
-} */
 
-@media screen and (max-width: 885px) {
-    .hobbies_and_interests .hobbies{
-        width: 100%;
-        word-wrap: break-word;
-    }
 
-    .hobbies_and_interests .interests{
-        width: 100%;
-        word-wrap: break-word;
-    }
-}
