@@ -1,8 +1,14 @@
 <div class= "container"> 
         <div>
-        <img src="" alt= "A photo of Nancy" height="250x" width="200px" class="center" />
-        <p class="name">Nancy Ndung'u</p>
-        <p class="career" >Software Engineer</p>
+                <img src="{{myProfile.avatarUrl}}" alt= "A photo of Nancy" height="250x" width="200px" class="center" />
+                <p class="name">{{myProfile.userName}}</p>
+                </div>
+        <div>
+                <div *ngFor='let repo of repos;let i = index'>
+                        <p>Repo Name: {{repo.name}} </p>
+                        <p>Description: {{repo.description}} </p>
+
+                </div>
         </div>
 </div>
 

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Repo } from '../repo';
+
 import { GetReposByUsernameService } from '../get-repos-by-username-service/get-repos-by-username.service';
+import { MyProfileService } from '../my-profile-service/my-profile.service';
+import { MyProfile } from '../my-profile-class';
 
 @Component({
   selector: 'app-github-search',
@@ -8,24 +11,20 @@ import { GetReposByUsernameService } from '../get-repos-by-username-service/get-
   styleUrls: ['./github-search.component.css']
 })
 export class GithubSearchComponent implements OnInit {
-  repos : []
-  constructor(private getReposByUserNameService: GetReposByUsernameService) {
+  repos : Repo []
+  myProfile  : MyProfile
+  constructor(private getReposByUserNameService: GetReposByUsernameService, private myProfileService: MyProfileService ) {
     this.repos = []
+    this.myProfile = new MyProfile('', '')
    }
 
-  ngOnInit(){
-    interface ApiResponse{
-      author:string;
-      quote:string;
-    } 
-}
-
-  onSearch(userName: string) {
-    this.getReposByUserNameService.getReposByUserName('Charlesjonah')
-    this.repos = this.getReposByUserNameService.repos
+  async ngOnInit(){
+    await this.getReposByUserNameService.getReposByUserName("nancyjamescoding")
+    await this.myProfileService.getMyProfile('nancyjamescoding')
+    this.myProfile =  new MyProfile(this.myProfileService.myProfile.avatarUrl, this.myProfileService.myProfile.userName)
+    
+    this.getReposByUserNameService.repos.forEach((repo: any, index: number) => {
+      this.repos.push(new Repo(repo.name, repo.description))
+    });
   }
-
-
-
-
 }

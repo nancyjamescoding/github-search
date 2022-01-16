@@ -22,8 +22,7 @@ export class SearchFormComponent implements OnInit {
 
   async onSearch() {
     await this.getReposByUserNameService.getReposByUserName(this.newUser.userName)
-    let newRepos = this.getReposByUserNameService.repos
-    newRepos.forEach((repo: any, index: number) => {
+    this.getReposByUserNameService.repos.forEach((repo: any, index: number) => {
       this.repos.push(new Repo(repo.name, repo.description))
     });
   }

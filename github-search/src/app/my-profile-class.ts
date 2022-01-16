@@ -1,5 +1,5 @@
-export class MyProfileClass {
-    constructor(public userName: string) {
+export class MyProfile {
+    constructor(public avatarUrl: string, public userName: string) {
 
     }
 }

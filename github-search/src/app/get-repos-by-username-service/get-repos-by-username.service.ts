@@ -16,7 +16,7 @@ export class GetReposByUsernameService {
    }
 
   getReposByUserName(userName:string) {
-    let promise = new Promise<void>((resolve,reject)=>{
+    let promise = new Promise<void>((resolve,reject) => {
       this.http.get<any>(`${environment.baseUrl}/users/${userName}/repos`, 
         {
           headers: new HttpHeaders().set('Authorization', `token ${environment.apiKey}`),
@@ -32,5 +32,4 @@ export class GetReposByUsernameService {
     })
     return promise
   }
-
 }
