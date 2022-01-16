@@ -1,14 +1,21 @@
-.heading {
-    text-align: center;
-    color:black;
-    background-color: lightskyblue;
-    margin: 20px;
-    border: 2px solid black;
-}
+
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+.name {
+    text-align: center;
+    color:black;
+    font-size: large;
+}
 
-
+ p{
+    font-family: 'Architects Daughter', cursive;
+    font-size: larger;
+    font-weight: bold;
+ }
+ .repos{
+     background-color:cornflowerblue;
+     color: cornsilk;
+ }

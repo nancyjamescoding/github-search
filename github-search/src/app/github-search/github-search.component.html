@@ -4,8 +4,8 @@
                 <p class="name">{{myProfile.userName}}</p>
         </div>
         <div>
-                <div *ngFor='let repo of repos;let i = index'>
-                        <p>Repo Name: {{repo.name}} </p>
+                <div *ngFor='let repo of repos;let i = index' class="repos">
+                        <h4>Repo Name: {{repo.name}} </h4>
                         <p>Description: {{repo.description}} </p>
 
                 </div>
