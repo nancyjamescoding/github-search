@@ -2,17 +2,17 @@
 ## Author [Nancy Ndungu]
 
 ### Description
-This is an application that enables users to create a new quote,upvote or downvote a quote.,delete a quote,See the number of upvotes and number of downvotes for each quote.
+users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories
 
 ### live Page
-https://nancyjamescoding.github.io/Quote/ 
+https://nancyjamescoding.github.io/git-search/ 
 
 ### Installation/ Set-up Process
 * Open Terminal {Ctrl+Alt+T}
 
-* git clone https://nancyjamescoding.github.io/Quote/
+* git clone https://nancyjamescoding.github.io/gitsearch/
 
-* cd quote.
+* cd gitsearch.
 
 * code . or atom . depending on the text editor of your choice.
 
