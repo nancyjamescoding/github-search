@@ -34,4 +34,4 @@ https://nancyjamescoding.github.io/Quote/
 
 ### License
     . MIT license:
-    . Copyright (c) 2021 [Nancy Ndung
+    . Copyright (c) 2021 [Nancy Ndung'u]
