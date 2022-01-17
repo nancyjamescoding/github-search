@@ -10,6 +10,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SearchRepoFormComponent } from './search-repo-form/search-repo-form.component';
+import { HighlightDirective } from './highlight.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SearchRepoFormComponent } from './search-repo-form/search-repo-form.com
     GithubSearchComponent,
     SearchFormComponent,
     NotFoundComponent,
-    SearchRepoFormComponent
+    SearchRepoFormComponent,
+    HighlightDirective,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,14 @@
 <div class= "container"> 
-        <div>
-                <img src="{{myProfile.avatarUrl}}" alt= "A photo of Nancy" height="250x" width="200px" class="center" />
-                <p class="name">{{myProfile.userName}}</p>
+        <div class="overlay">
+                <div>
+                        <img src="{{myProfile.avatarUrl}}" alt= "A photo of Nancy" height="250x" width="250px" class="center" />
+                        <div class="name">{{myProfile.userName}}</div>
+                </div>
         </div>
         <div>
-                <div *ngFor='let repo of repos;let i = index' class="repos">
-                        <h4>Repo Name: {{repo.name}} </h4>
-                        <p>Description: {{repo.description}} </p>
+                <div class="card" *ngFor='let repo of repos;let i = index'>
+                        <p class="reponame">Repo Name: {{repo.name}} </p>
+                        <p class="description">Description: {{repo.description}} </p>
 
                 </div>
         </div>

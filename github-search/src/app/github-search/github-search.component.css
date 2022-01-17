@@ -3,19 +3,58 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
 .name {
     text-align: center;
-    color:black;
-    font-size: large;
+    color:whitesmoke;
+    font-size: x-large;
+    font-weight: bold;
 }
 
- p{
-    font-family: 'Architects Daughter', cursive;
-    font-size: larger;
-    font-weight: bold;
+ /* p{
+    /* font-family: 'Architects Daughter', cursive; */
+    /* font-size: larger; */
+    /* font-weight: bold; */
+ /* } */ 
+
+ .overlay{
+    margin-top: 20px;
+    background-color: #0e8ef1;
+    border: 2px solid #e0e3e5;
+    box-shadow: 1px 1px 20px 20px #e0e3e5;
+    border-radius: 5px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
  }
- .repos{
-     background-color:cornflowerblue;
-     color: cornsilk;
+
+ img {
+     border: 2px solid white;
+     border-radius: 150px;
+     margin-bottom: 40px;
+ }
+ 
+ .reponame{
+     font-weight: bold;
+     
+ }
+ .description{
+    /* font-family: 'Architects Daughter', cursive; */
+    font-size: larger; 
+    
+ }
+ .card {
+    border: 2px solid white;
+    box-shadow: 1px 1px 10px 10px #e0e3e5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    min-height: 200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
  }
