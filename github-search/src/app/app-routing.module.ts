@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { GithubSearchComponent } from './github-search/github-search.component';
 import { SearchRepoFormComponent } from './search-repo-form/search-repo-form.component';
-import { NotFoundComponent } from './not-found/not-found.component';
+// import { NotFoundComponent } from './not-found/not-found.component';
 
 
 

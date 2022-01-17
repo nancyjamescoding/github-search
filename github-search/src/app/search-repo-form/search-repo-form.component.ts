@@ -10,9 +10,9 @@ import { RepositoryService } from '../repository-service/repository.service';
 export class SearchRepoFormComponent implements OnInit {
 
   repo: Repo
-  newRepoForm = new RepoForm('', '')
+  newRepoForm = new RepoForm('', '',true,true)
   constructor(private repoService: RepositoryService) { 
-    this.repo = new Repo('', '')
+    this.repo = new Repo('', '',)
   }
 
   ngOnInit(): void {
