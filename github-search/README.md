@@ -24,10 +24,10 @@ https://nancyjamescoding.github.io/git-search/
   * Typescript
 
 ### BDD
-  * User clicks Add Quote
-  * User Clicks Delete-The quote is REMOVED from view
-  * User clicks Upvote-upvote is incremented value by 1 on each click
-  * User clicks Downvote-downvote is decremented value by 1 on each click
+  * User clicks search for a github profile by username
+  * User Clicks Enter the username of the github User name
+  * User clicks Enter the username and reponame of the github User name
+  * The repositories displays in the form
 
 ### Contact Information
      You can reach us on [nancy.ndung'u@student.moringaschool.com] 
