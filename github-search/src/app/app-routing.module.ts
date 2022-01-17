@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: 'search-form', component:SearchFormComponent},
   {path: 'github-search', component:GithubSearchComponent},
   {path: 'search-repo-form',component:SearchRepoFormComponent},
-  {path: '**', component:NotFoundComponent},
+  // {path: '**', component:NotFoundComponent},
   
 
 ];
