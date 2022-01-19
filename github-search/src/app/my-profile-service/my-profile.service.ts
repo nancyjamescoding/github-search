@@ -19,7 +19,7 @@ export class MyProfileService {
     let promise = new Promise<void>((resolve,reject) => {
       this.http.get<any>(`${environment.baseUrl}/users/${userName}`, 
         {
-          headers: new HttpHeaders().set('Authorization', `token ${environment.apiKey}`),
+          headers: new HttpHeaders().set('Authorization', `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`),
         }
       ).toPromise().then(response => {
         this.myProfile = new MyProfile(response.avatar_url, response.name)
