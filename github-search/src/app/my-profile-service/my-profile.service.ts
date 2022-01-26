@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { MyProfile } from '../my-profile-class';
+import { apiKey } from 'src/config/clients-secret';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +20,7 @@ export class MyProfileService {
     let promise = new Promise<void>((resolve,reject) => {
       this.http.get<any>(`${environment.baseUrl}/users/${userName}`, 
         {
-          headers: new HttpHeaders().set('Authorization', `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`),
+          headers: new HttpHeaders().set('Authorization', `token ${apiKey}`),
         }
       ).toPromise().then(response => {
         this.myProfile = new MyProfile(response.avatar_url, response.name)

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { apiKey } from 'src/config/clients-secret';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +20,7 @@ export class GetReposByUsernameService {
     let promise = new Promise<void>((resolve,reject) => {
       this.http.get<any>(`${environment.baseUrl}/users/${userName}/repos`, 
         {
-          headers: new HttpHeaders().set('Authorization', `token ${environment.apiKey}`),
+          headers: new HttpHeaders().set('Authorization', `token ${apiKey}`),
         }
       ).toPromise().then(response => {
         this.repos = response
